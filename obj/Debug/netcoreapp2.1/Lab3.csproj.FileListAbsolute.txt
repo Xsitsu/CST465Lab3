@@ -12,3 +12,14 @@ Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.AssemblyInfo.cs
 Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.RazorTargetAssemblyInfo.cache
 Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.dll
 Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.pdb
+Z:\CST 465\Lab3\bin\Debug\netcoreapp2.1\Lab3.Views.dll
+Z:\CST 465\Lab3\bin\Debug\netcoreapp2.1\Lab3.Views.pdb
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.TagHelpers.input.cache
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.TagHelpers.output.cache
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.RazorCoreGenerate.cache
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Razor\Views\Home\index.g.cshtml.cs
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.RazorTargetAssemblyInfo.cs
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.Views.pdb
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.csproj.CopyComplete
+Z:\CST 465\Lab3\bin\Debug\netcoreapp2.1\ArmadilloLib.dll
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Razor\Views\Armadillo\index.g.cshtml.cs

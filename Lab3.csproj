@@ -5,11 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <Reference Include="ArmadilloLib"> <HintPath>DLL\ArmadilloLib.dll</HintPath> </Reference>
   </ItemGroup>
 
 </Project>
