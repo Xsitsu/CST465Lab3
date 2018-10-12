@@ -23,3 +23,4 @@ Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.Views.pdb
 Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Lab3.csproj.CopyComplete
 Z:\CST 465\Lab3\bin\Debug\netcoreapp2.1\ArmadilloLib.dll
 Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Razor\Views\Armadillo\index.g.cshtml.cs
+Z:\CST 465\Lab3\obj\Debug\netcoreapp2.1\Razor\Views\Armadillo\List.g.cshtml.cs

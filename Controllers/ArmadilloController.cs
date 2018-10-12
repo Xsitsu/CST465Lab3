@@ -52,10 +52,9 @@ namespace Lab3.Controllers
         {
             return View();
         }
-        IEnumerable[Armadillo]
         public IActionResult List()
         {
-            return View();
+            return View(farm.FarmAnimals);
         }
     }
 }
