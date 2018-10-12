@@ -13,17 +13,23 @@ namespace Lab3.Controllers
         private Random rand = new Random();
 
         private string[] armadilloNames = System.IO.File.ReadLines("RandomNames.txt").ToArray();
-        private ArmadilloFarm farm = new ArmadilloFarm();
+        private static ArmadilloFarm farm;
         public ArmadilloController()
         {
-            for (int i = 0; i < 10; i++)
+            if (farm == null)
             {
-                string name = armadilloNames[rand.Next(1, armadilloNames.Length)];
-                int age = rand.Next(2, 7);
-                int shellHardness = (int)(age * 1.4) + rand.Next(1, 4);
-                bool isPainted = ((age + shellHardness) % 4 == 0);
+                farm = new ArmadilloFarm();
 
-                farm.FarmAnimals.Add(new Armadillo() { Name = name, Age = age, ShellHardness = shellHardness, IsPainted = isPainted });
+
+                for (int i = 0; i < 10; i++)
+                {
+                    string name = armadilloNames[rand.Next(1, armadilloNames.Length)];
+                    int age = rand.Next(2, 7);
+                    int shellHardness = (int)(age * 1.4) + rand.Next(1, 4);
+                    bool isPainted = ((age + shellHardness) % 4 == 0);
+
+                    farm.FarmAnimals.Add(new Armadillo() { Name = name, Age = age, ShellHardness = shellHardness, IsPainted = isPainted });
+                }
             }
         }
         [Route("/SearchAnimals")]
