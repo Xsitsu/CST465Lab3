@@ -12,29 +12,7 @@ namespace Lab3.Controllers
     {
         private Random rand = new Random();
 
-        private string[] armadilloNames =
-        {
-            "Thaoztitl",
-            "V'elth'thax",
-            "Thictoxr",
-            "Grodrri",
-            "Dioll'rorh",
-            "Ynuld'endess",
-            "Uctaioghal",
-            "Ainodrux",
-            "Engyjharc",
-            "Ukhebrerh",
-            "Ngervi",
-            "Mhaojhust",
-            "Vathleth",
-            "Shoudhi",
-            "Kopex",
-            "Umliognnast",
-            "Ishoudri",
-            "Ezuthr'zha",
-            "Uxughi",
-            "Ukthouggd'ithuh"
-        };
+        private string[] armadilloNames = System.IO.File.ReadLines("RandomNames.txt").ToArray();
         private ArmadilloFarm farm = new ArmadilloFarm();
         public ArmadilloController()
         {
@@ -48,6 +26,7 @@ namespace Lab3.Controllers
                 farm.FarmAnimals.Add(new Armadillo() { Name = name, Age = age, ShellHardness = shellHardness, IsPainted = isPainted });
             }
         }
+        [Route("/SearchAnimals")]
         public IActionResult Index()
         {
             return View();
@@ -55,6 +34,11 @@ namespace Lab3.Controllers
         public IActionResult List()
         {
             return View(farm.FarmAnimals);
+        }
+        [HttpPost]
+        public IActionResult Search(string name)
+        {
+            return View("SearchResults", farm.FarmAnimals.Where(a => a.Name.Contains(name)));
         }
     }
 }

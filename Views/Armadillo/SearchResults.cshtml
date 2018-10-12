@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ArmadilloLib.Armadillo>
+@{
+    ViewData["Title"] = "SearchResults";
+}
+
+<h2>Search Results</h2>
+
+Returned @Model.Count() results.
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Shell Hardness</th>
+        <th>IsPainted</th>
+    </tr>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.Name</td>
+            <td>@a.Age</td>
+            <td>@a.ShellHardness</td>
+            <td>@a.IsPainted</td>
+        </tr>
+    }
+</table>
